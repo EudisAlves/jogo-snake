@@ -3,23 +3,21 @@ let ctx = canvas.getContext("2d"); // o contexto me diz em quantas dimenções i
 let box = 32;
 let snake = [];
 snake[0] = {
-    x: 8 * box,
-    y: 8 * box
-}
+  x: 8 * box,
+  y: 8 * box,
+};
 
 function criarBG() {
-    ctx.fillStyle = "lightgreen";
-    ctx.fillRect(0, 0, 16 * box, 16 * box);
+  ctx.fillStyle = "lightgreen";
+  ctx.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarCobrinha() {
-    for( 1=0; i < snake.lenght; i) {
-        ctx.fillStyle = "green";
-        ctx.fillRect(snake[i])
-    }
+  for (i = 0; i < snake.length; i++) {
+    ctx.fillStyle = "blak";
+    ctx.fillRect(snake[i].x, snake[i].y, box, box);
+  }
 }
 
 criarBG();
-newFunction();
-
-
+criarCobrinha();
